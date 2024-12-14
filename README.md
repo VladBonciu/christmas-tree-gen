@@ -22,6 +22,8 @@ _(A more complex example would be:  322239888777666554433322211)_
 
 ## How did I make this?
 
+This is a surface level explanation of how the program works.
+
 ### 1) Reading values from the keyboard
 The program is reading characters from the keyboard until Enter is met. The read values are registered and converted from ASCII to the value of that character. The input is then multiplied by 2 in order to be able to center it. The value is then pushed onto the stack.
 ### 2) Generating lines based on the input values
