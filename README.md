@@ -15,7 +15,10 @@ Every value thats introduced (which has to be a number from 1-9 in order for the
 
 Basically you're building your tree from the bottom up.
 
-**Here's an example of an input form:** 322239888777666554433322211
+**Here's an example of an input form:** 133221
+_(A more complex example would be:  322239888777666554433322211)_
+
+![ExampleImage](https://github.com/VladBonciu/christmas-tree-gen/blob/main/ExampleImage.png)
 
 ## How did I make this?
 
