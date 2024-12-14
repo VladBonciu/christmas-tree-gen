@@ -23,9 +23,13 @@ _(A more complex example would be:  322239888777666554433322211)_
 ## How did I make this?
 
 ### 1) Reading values from the keyboard
+The program is reading characters from the keyboard until Enter is met. The read values are registered and converted from ASCII to the value of that character. The value is then pushed onto the stack.
 ### 2) Generating lines based on the input values
+After reading the input values it starts generating the lines based on the values on the stack, until the read value is 0. (which i pushed on the stack before reding the fist character) The lines are offset based on their legth in order to center all the rows.
 ### 3) Generating christmas globes based on the input values
+The christmas globes are generated using the same values previously provided on the stack. Their initial position is that of the first pixel of the line.
 ### 4) Offseting those values in order for them to appear random
+The globe positions are offset from the first pixel of the row by taking a random value from the stack (which is obtained by an initial seed being added to the base pointers position, from which a supposedly random value is extracted), squaring it, and then dividing it by the length of the current line. The remainder of the division is the offset of the initial position. After all that the random seed is incremented for a different outcome on the next row.
 
 ## License
 
